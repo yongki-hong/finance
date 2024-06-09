@@ -4,11 +4,11 @@
   "description": "재무RPA01",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.23.3-preview]",
+    "UiPath.Excel.Activities": "[2.23.2-preview]",
     "UiPath.Mail.Activities": "[1.22.2]",
     "UiPath.System.Activities": "[24.3.1]",
-    "UiPath.Testing.Activities": "[24.4.0-preview]",
-    "UiPath.UIAutomation.Activities": "[24.4.1-preview]"
+    "UiPath.Testing.Activities": "[24.2.0-preview]",
+    "UiPath.UIAutomation.Activities": "[24.2.1-preview]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -44,6 +44,7 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
+    "modernBehavior": false,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
