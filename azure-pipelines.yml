@@ -2,7 +2,7 @@
 - task: UiPathInstallPlatform@4
   inputs:
     cliVersion: 'WIN_23.10.8894.39673'
-    cliNupkgPath: '/'
+    cliNupkgPath: '$(Agent.ToolsDirectory)\nupkg\UiPath.CLI.X.22.10.8418.30339.nupkg'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
