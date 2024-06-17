@@ -8,7 +8,7 @@ trigger:
 - main
 
 pool:
-  name: win11  # 생성한 에이전트 풀 이름
+  name: 'Azure Pipelines'  # 생성한 에이전트 풀 이름
 
 steps:
 - script: echo Hello, world!
