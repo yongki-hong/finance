@@ -17,7 +17,14 @@ steps:
 - task: UiPathInstallPlatform@4
   inputs:
     cliVersion: 'WIN_23.10.8753.32995'
-
+- task: UiPathPack@4
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.ArtifactStagingDirectory)\finance'
+    orchestratorConnection: 'fdxcom'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    traceLevel: 'Verbose'
+    
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
