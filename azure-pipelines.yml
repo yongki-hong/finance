@@ -17,7 +17,6 @@ steps:
 - task: UiPathInstallPlatform@4
   inputs:
     cliVersion: 'WIN_23.10.8894.39673'
-    cliNupkgPath: '$(Agent.ToolsDirectory)\nupkg\UiPath.CLI.23.10.8894.39673.nupkg'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
