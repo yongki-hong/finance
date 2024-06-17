@@ -8,7 +8,9 @@ trigger:
 - main
 
 pool:
-  vmImage: 'win11'
+  name: 'win11'  # 생성한 에이전트 풀 이름
+  demands:
+    - agent.name -equals self-hosted
 
 steps:
 - script: echo Hello, world!
