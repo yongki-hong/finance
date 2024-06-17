@@ -20,7 +20,7 @@ steps:
 - task: UiPathPack@4
   inputs:
     versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.ArtifactStagingDirectory)\finance'
+    projectJsonPath: '$(Build.SourcesDirectory)'
     orchestratorConnection: 'fdxcom'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     traceLevel: 'Verbose'
