@@ -8,7 +8,7 @@ trigger:
 - main
 
 pool:
-  name: 'Azure Pipelines'  # 생성한 에이전트 풀 이름
+  name: 'win11'  # 생성한 에이전트 풀 이름
 
 steps:
 - script: echo Hello, world!
@@ -18,13 +18,6 @@ steps:
   inputs:
     cliVersion: 'WIN_23.10.8894.39673'
     cliNupkgPath: '$(Agent.ToolsDirectory)\nupkg\UiPath.CLI.X.22.10.8418.30339.nupkg'
-
-- task: UiPathPack@4
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: '/'
-    outputType: 'Process'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 
 - script: |
