@@ -25,6 +25,13 @@ steps:
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
     traceLevel: 'Verbose'
     
+- task: UiPathDeploy@4
+  inputs:
+    orchestratorConnection: 'fdxcom'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'CICD_TEST'
+    traceLevel: 'Verbose'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
