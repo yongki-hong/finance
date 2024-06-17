@@ -16,7 +16,7 @@ steps:
 
 - task: UiPathInstallPlatform@4
   inputs:
-    cliVersion: 'WIN_23.10.8894.39673'
+    cliVersion: 'WIN_23.10.8753.32995'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
