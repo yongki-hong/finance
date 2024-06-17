@@ -8,9 +8,9 @@ trigger:
 - main
 
 pool:
-  name: 'win11'  # 생성한 에이전트 풀 이름
+  name: win11  # 생성한 에이전트 풀 이름
   demands:
-    - agent.name -equals self-hosted
+    - agent.name -equals fdx-win10_01
 
 steps:
 - script: echo Hello, world!
