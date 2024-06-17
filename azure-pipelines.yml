@@ -7,6 +7,8 @@
 trigger:
 - main
 
+pool:
+  vmImage: 'win11'
 
 steps:
 - script: echo Hello, world!
